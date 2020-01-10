@@ -6,7 +6,7 @@ Marek Przygocki
 program przyjmuje 1+3*N parametrów, gdzie N to w zakresie od 1-10
 
 Pierwszy argument - ilość osób które mają zostac wygenerowane i umieszczone w strukturach, zakres : 1-1.000.000
-argument 2,3,4 - odpowiednio wg. jakiego pola ma wypisac posortowane dane, od jakiej pozycji[numerujemy od 1], i ilosć pozycji do wypisania
+argument 2,3,4 - odpowiednio wg. jakiego pola mają zostać wypisane posortowane dane, od jakiej pozycji [ numerujemy od 1 ], i ilosć pozycji do wypisania
 argument 5,6,7 - jak wyżej
 ...
 sortowanie (parametr 2 + (N*3)):
