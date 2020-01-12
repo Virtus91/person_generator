@@ -11,9 +11,6 @@
 #include <cmath>
 
 
-std::array<std::string,20> names{"Andrzej" ,"Piotr", "Olaf", "Kornel", "Aleksander", "Pawel", "Krzysztof", "Marek", "Kamil", "Artur", "Adrian", "Adolf","Bartek","Blazej","Bonifacy", "Dawid","Zygmunt", "Wiktor", "Zygfryd", "Dominik"};
-std::array<std::string,20> surnames{"Nowak" ,"Jagodzinski", "Gadzala", "Kijak", "Slon", "Zlotnicki", "Krzysztofiak", "Urban", "Wojewodzki", "Pogodny", "Berowski","Makowski", "Kowal", "Bernicki", "Augustynski", "Monkowski", "Bonkowski", "Chlebowski", "Piecykowski", "Graczyk"};
-std::array<std::string,20> addresses{"Szczecin", "Gdansk", "Mielec", "Gdynia", "Radom", "Gorzow", "Zielona Gora", "Kalisz", "Drawsko Pomorskie", "Warszawa", "Krakow", "Poznan", "Gryfice", "Resko", "Ploty", "Barlinek", "Czestochowa", "Swinoujscie", "Kolobrzeg", "Miedzyzdroje"};
 
 
 std::ostream& operator<<(std::ostream& s,const Person& p){
@@ -30,6 +27,10 @@ int how_many;
 
 //FUNCKJA GENERUJACA OSOBY
 std::shared_ptr<Person> generate(){
+	
+	std::array<std::string,20> names{"Andrzej" ,"Piotr", "Olaf", "Kornel", "Aleksander", "Pawel", "Krzysztof", "Marek", "Kamil", "Artur", "Adrian", "Adolf","Bartek","Blazej","Bonifacy", "Dawid","Zygmunt", "Wiktor", "Zygfryd", "Dominik"};
+	std::array<std::string,20> surnames{"Nowak" ,"Jagodzinski", "Gadzala", "Kijak", "Slon", "Zlotnicki", "Krzysztofiak", "Urban", "Wojewodzki", "Pogodny", "Berowski","Makowski", "Kowal", "Bernicki", "Augustynski", "Monkowski", "Bonkowski", "Chlebowski", "Piecykowski", "Graczyk"};
+	std::array<std::string,20> addresses{"Szczecin", "Gdansk", "Mielec", "Gdynia", "Radom", "Gorzow", "Zielona Gora", "Kalisz", "Drawsko Pomorskie", "Warszawa", "Krakow", "Poznan", "Gryfice", "Resko", "Ploty", "Barlinek", "Czestochowa", "Swinoujscie", "Kolobrzeg", "Miedzyzdroje"};
     
     //miesiace majace po 31 dni
     std::set<int> m31d{0,2,4,6,7,9,11};
